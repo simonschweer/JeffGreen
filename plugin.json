@@ -1,0 +1,39 @@
+{
+    "version"           :   "0.0.1",
+    "name"              :   "JeffGreen",
+    "pluginIcon"        :   "",
+    "authorIcon"        :   "",
+    "email"             :   "simonschweer@me.com",
+    "phone"             :   "+4901755207429",
+    "description"       :   "Jeff Green theme for Ceres 3.",
+    "namespace"         :   "JeffGreen",
+    "author"            :   "Simon Schweer",
+    "type"              :   "theme",
+    "require"           :   {
+                                "Ceres":"~3.0"
+                            },
+    "serviceProvider"   :   "JeffGreen\\Providers\\JeffGreenServiceProvider",
+    "dataProviders"     :
+    [
+        {
+            "key"           :"JeffGreen\\Containers\\JeffGreenContainer",
+            "name"          :"Stylesheet",
+            "description"   :"Add changes to the CSS file"
+        },
+        {
+            "key"           :"JeffGreen\\Containers\\JeffGreenItemListContainer1",
+            "name"          :"First item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"JeffGreen\\Containers\\JeffGreenItemListContainer2",
+            "name"          :"Second item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"JeffGreen\\Containers\\JeffGreenItemListContainer3",
+            "name"          :"Third item list",
+            "description"   :"Display a configurable list of items in your online store"
+        }
+    ]
+}
