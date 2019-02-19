@@ -15,7 +15,7 @@
 {% set currencyFormatSelect = config("Ceres.currency.format_selection") %}
 
 
-{% set headerContainer = LayoutContainer.show("Ceres::Header") | trim %}
+{% set headerContainer = LayoutContainer.show("JeffGreen::Header") | trim %}
 {% if headerContainer is empty %}
     {% include "Ceres::PageDesign.Partials.Header.DefaultHeader" %}
 {% else %}
@@ -23,10 +23,6 @@
     {{ headerContainer | raw }}
 </header>
 {% endif %}
-
-<header id="page-header" class="fixed-top">
-    {{ headerContainer | raw }}
-	</header>
 
 {% set scriptId = uid() %}
 <script id="{{ scriptId }}">
