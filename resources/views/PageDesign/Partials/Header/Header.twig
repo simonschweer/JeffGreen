@@ -16,9 +16,7 @@
 
 
 {% set headerContainer = LayoutContainer.show("JeffGreen::Header") | trim %}
-{% if headerContainer is empty %}
-    {% include "Ceres::PageDesign.Partials.Header.DefaultHeader" %}
-{% else %}
+
 <header id="page-header" class="fixed-top">
     {{ headerContainer | raw }}
 </header>
