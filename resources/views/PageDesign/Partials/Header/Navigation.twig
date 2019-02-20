@@ -4,7 +4,7 @@
 {% set companyName  = trans("Ceres::Template.headerCompanyName") %}
 {% set useMegaMenu  = config("Ceres.header.megamenu_levels") > 1 %}
 
-<nav class="navbar{% if useMegaMenu %} megamenu{%endif%}">
+<nav class="navbar megamenu">
     <div class="container-fluid">
         <div class="row">
             <div class="brand-wrapper" {% if showHeaderNavBar == "side" %}style="position: relative"{% endif %}>
@@ -26,8 +26,8 @@
                     <li class="btnClose"></li>
                 </ul>
                 {% if showHeaderNavBar == "top" or showHeaderNavBar == "both" or not services.template.isCategory() %}
-                    {# includeCached('Ceres::PageDesign.Partials.Header.NavigationList.twig') #}
-                    {% include "Ceres::PageDesign.Partials.Header.NavigationList" %}
+                    {# includeCached('JeffGreen::PageDesign.Partials.Header.NavigationList.twig') #}
+                    {% include "JeffGreen::PageDesign.Partials.Header.NavigationList" %}
                 {% endif %}
             </div>
 
