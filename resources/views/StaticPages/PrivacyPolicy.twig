@@ -15,10 +15,10 @@
     <div class="container-max page-content">
         <div class="row">
             <div class="col-12">
-                <br/>
                 {% autoescape false %}
-                    <h1 class="h2 category-title">{{ trans("Ceres::Template.privacyPolicy", {"hyphen": "&shy;"}) }}</h1>
+                    <h1>{{ trans("Ceres::Template.privacyPolicy", {"hyphen": "&shy;"}) }}</h1>
                 {% endautoescape %}
+                <hr>
                 {% if privacyPolicy.htmlText %}
                     {{ privacyPolicy.htmlText | raw }}
                 {% else %}
