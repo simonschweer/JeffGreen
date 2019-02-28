@@ -16,8 +16,9 @@
         <li class="nav-item">
             <a :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" href="#assessments-details" role="tab">{{ trans("Ceres::Template.singleItemMoreDetails") }}</a>
         </li>
-        -->
+
         <slot name="AddDetailTabs"></slot>
+        -->
     </ul>
 
     <div class="tab-content">
@@ -28,7 +29,7 @@
                 </div>
             </div>
         {% endif %}
-
+        <!--
         {% if 'item.technical_data' in itemData or 'all' in itemData %}
             <div :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="tab-pane" :id="'data-' + currentVariation.variation.id" role="tabpanel" v-if="isTechnicalDataTabActive">
                 <div class="my-4" v-html="currentVariation.texts.technicalData">
@@ -110,17 +111,6 @@
                         </tr>
                     {% endif %}
 
-                    {% if ('item.variation_dimensions' in itemData or 'all' in itemData) %}
-                        <tr>
-                            <td>{{ trans("Ceres::Template.singleItemDimensions") }}</td>
-                            <td>
-                                <span>${ currentVariation.variation.lengthMM }</span>&times;<!--
-                                                --><span>${ currentVariation.variation.widthMM }</span>&times;<!--
-                                                --><span>${ currentVariation.variation.heightMM }</span> mm
-                            </td>
-                        </tr>
-                    {% endif %}
-
                     {% if ('item.customs_tariff_number' in itemData or 'all' in itemData) %}
                         <tr v-if="currentVariation.item.customsTariffNumber !== ''">
                             <td>{{ trans("Ceres::Template.singleItemCustomsTariffNumber") }}</td>
@@ -130,9 +120,10 @@
                     </tbody>
                 </table>
             </div>
+           
         </div>
-
         <slot name="AddDetailTabsContent"></slot>
+        -->
     </div>
 </div>
 <!-- ./ITEM DESCRIPTION -->
