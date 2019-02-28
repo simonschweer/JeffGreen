@@ -17,11 +17,8 @@
             <div class="col-12">
                 <br/>
                 {% autoescape false %}
-                    <h1>{{ trans("Ceres::Template.legalDisclosure") }}</h1>
+                    <h1 class="h2 category-title">{{ trans("Ceres::Template.legalDisclosure") }}</h1>
                 {% endautoescape %}
-
-                <hr class="my-5">
-
                 {% if legalDisclosure.htmlText %}
                     {{ legalDisclosure.htmlText | raw }}
                 {% else %}
