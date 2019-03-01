@@ -8,21 +8,24 @@
 <script type="x/template" id="vue-single-item">
     <div>
         <div class="single page-content">
-            <div class="row mt-5 position-relative" style="background-color:#f2f4f5;">
+            <div class="container-fluid">
+              <div class="row mt-5 position-relative" style="background-color:#f2f4f5;">
+                  <div class="col-md-7">
+                      <slot name="ImageCarousel"></slot>
+                  </div>
 
-                <div class="col-md-7">
-                    <slot name="ImageCarousel"></slot>
-                </div>
-
-                <div class="col-md-5 single-rightside">
-                    {% include "JeffGreen::Item.Components.SingleItem.SingleItem_Details" %}
-                </div>
+                  <div class="col-md-5 single-rightside">
+                      {% include "JeffGreen::Item.Components.SingleItem.SingleItem_Details" %}
+                  </div>
+              </div>
             </div>
 
-            <div class="row mt-5 position-relative">
-                <div class="">
-                    {% include "JeffGreen::Item.Components.SingleItem.SingleItem_InformationTable" %}
-                </div>
+            <div class="container-fluid">
+              <div class="row mt-5 position-relative">
+                  <div class="">
+                      {% include "JeffGreen::Item.Components.SingleItem.SingleItem_InformationTable" %}
+                  </div>
+              </div>
             </div>
 
             <slot name="ItemListContainer"></slot>
