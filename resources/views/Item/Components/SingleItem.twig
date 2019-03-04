@@ -5,6 +5,7 @@
 {% set enabledRoutes = config("IO.routing.enabled_routes") | split(', ') %}
 {% set shippingCat = config("Ceres.global.shippingCostsCategoryId") %}
 
+<script type="x/template" id="vue-single-item">
     <div>
         <div class="single page-content">
             <div class="container-fluid">
@@ -31,3 +32,4 @@
             <slot name="FeedbackContainer"></slot>
         </div>
     </div>
+</script>
