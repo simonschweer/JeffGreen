@@ -9,7 +9,7 @@
 {{ component( "Ceres::Item.Components.ItemBundle" ) }}
 
 <!-- breadcrumb -->
-{% include "Ceres::PageDesign.Partials.Header.Breadcrumb" %}
+{% include "JeffGreen::PageDesign.Partials.Header.Breadcrumb" %}
 
 
 <single-item v-cloak template="#vue-single-item" :item-data="{{ item | json_encode }}" :variation-list-data="{{ variations | json_encode }}" :attribute-name-map="{{attributeNameMap | json_encode}}" :variation-units="{{variationUnits | json_encode}}">
