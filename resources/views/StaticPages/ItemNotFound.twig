@@ -6,6 +6,29 @@
 
 {% block PageBody %}
 
-    {# TODO #}
+<div class="container-fluid jg-infobar">
+   <div class="d-flex justify-content-center"><span>DESIGN &amp; ENTWICKLUNG IN DEUTSCHLAND</span></div>
+ </div>
+
+<div class="d-none d-sm-block">
+  <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/gebauede.jpg" style="width:100%"/>
+</div>
+
+<div class="d-block d-sm-none">
+  <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/gebauede-xs.jpg" style="width:100%"/>
+</div>
+
+<div class="container-max page-content contact">
+    <div class="row">
+        <div class="col-12">
+            <br/>
+            {% autoescape false %}
+                <h1>404 - Seite nicht gefunden</h1>
+            {% endautoescape %}
+            <hr>
+            <p class="static-page-plain-text">Die aufgerufene Seite wurde leider nicht gefunden! </p>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
