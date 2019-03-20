@@ -1,1 +1,35 @@
 <!-- Insert markup for contact page here -->
+{% extends getPartial('page-design') %}
+
+{% block PartialHead %}
+    <meta name="description" content="{{ trans('Ceres::Template.contactMetaDescription') }}">
+    <meta name="robots" content="{{ config("Ceres.meta.robots_contact") }}">
+    <title>{{ trans("Ceres::Template.contact") }} | {{ trans("Ceres::Template.headerCompanyName") }}</title>
+
+    {% if config("Ceres.global.google_recaptcha_api_key") | length > 0 %}
+        <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    {% endif %}
+
+{% endblock %}
+
+{% block PageBody %}
+
+    {{ component( "Ceres::Customer.Components.Contact.ContactForm" ) }}
+
+    <div class="container-fluid jg-infobar">
+       <div class="d-flex justify-content-center"><span>DESIGN &amp; ENTWICKLUNG IN DEUTSCHLAND</span></div>
+     </div>
+
+    <div class="d-none d-sm-block">
+      <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/gebaeude.jpg" style="width:100%"/>
+    </div>
+
+    <div class="d-block d-sm-none">
+      <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/gebaeude-xs.jpg" style="width:100%"/>
+    </div>
+    
+    <div class="page-content container-max contact">
+        <contact-form template="#vue-contact-form"></contact-form>
+    </div>
+
+{% endblock %}
