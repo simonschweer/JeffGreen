@@ -1,1 +1,34 @@
-<!-- Insert markup here -->
+{% extends getPartial('page-design') %}
+
+{% block PartialHead %}
+    <title>{{ trans("Ceres::Template.wishList") }} | {{ trans("Ceres::Template.headerCompanyName") }}</title>
+{% endblock %}
+
+{% block PageBody %}
+    {{ component( "Ceres::WishList.Components.WishList" ) }}
+
+    <div class="container-fluid jg-infobar">
+       <div class="d-flex justify-content-center"><span>DESIGN &amp; ENTWICKLUNG IN DEUTSCHLAND</span></div>
+     </div>
+
+     <div class="d-none d-sm-block">
+       <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-2.jpg" style="width:100%"/>
+     </div>
+
+     <div class="d-block d-sm-none">
+       <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-2-xs.jpg" style="width:100%"/>
+     </div>p/gebauede-xs.jpg" style="width:100%"/>
+    </div>
+
+    <div class="page-content basket container-max mb-5">
+        <div class="row mt-3">
+            <div class="col-12">
+                <h1 class="h2">{{ trans("Ceres::Template.wishList") }}</h1>
+            </div>
+        </div>
+
+        <hr>
+
+         <wish-list template="#vue-wish-list" :init-ids="{{ wishList | json_encode() }}"></wish-list>
+    </div>
+{% endblock %}
