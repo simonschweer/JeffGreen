@@ -4,29 +4,3 @@
     <div class="my-4" v-html="currentVariation.texts.description"></div>
     <div class="my-4" v-html="currentVariation.texts.technicalData"></div>
 </div>
-
-<!--
-<div class="my-5">
-    <ul class="nav nav-tabs" role="tablist">
-        {% if 'item.description' in itemData or 'all' in itemData %}
-            <li class="nav-item" v-if="isDescriptionTabActive">
-                <a class="nav-link active" data-toggle="tab" :href="'#details-' +  currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemDescription") }}</a>
-            </li>
-        {% endif %}
-
-        <slot name="AddDetailTabs"></slot>
-    </ul>
-
-    <div class="tab-content">
-        {% if 'item.description' in itemData or 'all' in itemData %}
-            <div class="tab-pane active overflow-auto" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
-                <div class="my-4" v-html="currentVariation.texts.description"></div>
-                <div class="my-4" v-html="currentVariation.texts.technicalData"></div>
-            </div>
-        {% endif %}
-
-        <slot name="AddDetailTabsContent"></slot>
-    </div>
-</div>
--->
-<!-- ./ITEM DESCRIPTION -->

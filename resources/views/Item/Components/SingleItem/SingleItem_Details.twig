@@ -9,19 +9,8 @@
                             </span>
     </h1>
 
-    {% if ('item.shortDescription' in itemData or 'all' in itemData)%}
-        <p class="single-description" v-if="currentVariation.texts.shortDescription !== ''" v-html="currentVariation.texts.shortDescription"></p>
-    {% endif %}
-
     <hr>
-    <!--
-    <div class="mb-5">
-                            <span class="articlenumber small text-muted">
-                                <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
-                                <span>${ currentVariation.variation.number }</span>
-                            </span>
-    </div>
-    -->
+
     <!-- Variation -->
     <div class="mb-3" v-if="variations.length > 0">
         <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variation-units="variationUnits" :variations="variations" :preselect="currentVariation.variation.id" :unitPreselect="currentVariation.variation.unitCombinationId" @is-valid-change="isVariationSelected = $event"></variation-select>
