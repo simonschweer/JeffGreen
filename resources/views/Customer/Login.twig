@@ -6,7 +6,16 @@
 {% endblock %}
 
 {% block PageBody %}
-    {{ component( "JeffGreen::Customer.Components.LoginView") }}
+
+  <div class="d-none d-sm-block">
+    <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-4.jpg" style="width:100%"/>
+  </div>
+
+  <div class="d-block d-sm-none">
+    <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-4-xs.jpg" style="width:100%"/>
+  </div>
+
+    {{ component( "Ceres::Customer.Components.LoginView") }}
     {{ component( "Ceres::Customer.Components.Login") }}
     {{ component( "Ceres::Customer.Components.GuestLogin") }}
 
