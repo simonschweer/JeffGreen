@@ -4,6 +4,15 @@
 {{ component( "Ceres::Customer.Components.GuestLogin" ) }}
 
 <script type="x/template" id="vue-login-view" >
+
+    <div class="d-none d-sm-block">
+      <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-4.jpg" style="width:100%"/>
+    </div>
+
+    <div class="d-block d-sm-none">
+      <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-4-xs.jpg" style="width:100%"/>
+    </div>
+
     <div class="container-max login">
         <div class="row mb-5">
             <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-3">
@@ -38,6 +47,6 @@
         </div>
 
         <guest-login template="#vue-guest-login" backlink="{{ backlink | url_encode }}"></guest-login>
-        
+
     </div>
 </script>
