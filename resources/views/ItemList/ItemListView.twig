@@ -12,6 +12,13 @@
 
 {% block PageBody %}
 
+    {{ component( "Ceres::ItemList.Components.Filter.ItemFilterList") }}
+    {{ component( "Ceres::ItemList.Components.Filter.ItemFilterTagList") }}
+    {{ component( "Ceres::ItemList.Components.CategoryItem" ) }}
+
+
+    {{ overrideSearchFilters | json_encode }}
+
     <div class="d-none d-sm-block">
       <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-3.jpg" style="width:100%"/>
     </div>
@@ -19,13 +26,7 @@
     <div class="d-block d-sm-none">
       <img src="https://cdn02.plentymarkets.com/vdi6bjgy8ov1/frontend/webshop/teaser-image-3-xs.jpg" style="width:100%"/>
     </div>
-
-    {{ component( "Ceres::ItemList.Components.Filter.ItemFilterList") }}
-    {{ component( "Ceres::ItemList.Components.Filter.ItemFilterTagList") }}
-    {{ component( "Ceres::ItemList.Components.CategoryItem" ) }}
-
-
-    {{ overrideSearchFilters | json_encode }}
+    
     <div class="categoriegrid page-content container-max" data-test="foo">
         <div class="row mt-3">
             <div class="col-12">
