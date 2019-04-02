@@ -12,7 +12,7 @@
     <slot name="jg-properties"></slot>
 
     <!-- Variation -->
-    <div class="mb-5" v-if="variations.length > 0">
+    <div class="mb-3" v-if="variations.length > 0">
         <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variation-units="variationUnits" :variations="variations" :preselect="currentVariation.variation.id" :unitPreselect="currentVariation.variation.unitCombinationId" @is-valid-change="isVariationSelected = $event"></variation-select>
     </div>
     <!-- /Variation -->
@@ -20,8 +20,6 @@
     <!-- Item Bundle -->
     <item-bundle :bundle-type="currentVariation.variation.bundleType" :bundle-components="currentVariation.bundleComponents"></item-bundle>
     <!-- /Item Bundle -->
-
-    
 
     <div class="row" v-if="currentVariation.filter.isSalable && variationGroupedProperties.length">
         <order-property-list></order-property-list>
