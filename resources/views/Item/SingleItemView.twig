@@ -33,6 +33,7 @@
     </div>
 
     <div slot="jg-properties">
+      <table class="mt-4 mb-4 table table-sm">
       <tbody>
       {% for property in item.documents[0].data.properties %}
           {% if property.property.id == 133 %}
@@ -67,5 +68,6 @@
           {% endif %}
       {% endfor %}
       </tbody>
+      </table>
     </div>
 </single-item>
