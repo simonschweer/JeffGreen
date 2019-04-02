@@ -65,6 +65,8 @@
               <td>{{ property.texts.value  }}</td>
             </tr>
           {% endif %}
+        {% endfor %}
+        {% for property in item.documents[0].data.properties %}
           {% if property.property.id == 120 %}
             <tr>
               <td class="jg-property-check"><i class="fa fa-check"></i></td>
