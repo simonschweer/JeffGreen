@@ -9,6 +9,10 @@
                             </span>
     </h1>
 
+    <ul class="mt-4 mb-4">
+    <slot name="property-133"></slot>
+    </ul>
+
     <!-- Variation -->
     <div class="mb-5" v-if="variations.length > 0">
         <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variation-units="variationUnits" :variations="variations" :preselect="currentVariation.variation.id" :unitPreselect="currentVariation.variation.unitCombinationId" @is-valid-change="isVariationSelected = $event"></variation-select>
