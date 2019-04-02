@@ -32,13 +32,28 @@
         {% endif %}
     </div>
 
-    <div slot="property-133">
+    <div slot="jg-properties">
       {% for property in item.documents[0].data.properties %}
         {% if property.property.id == 133 %}
-          <li>
-            {{ property.texts.value  }}
-          </li>
-       {% endif %}
+          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
+          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
+        {% endif %}
+        {% if property.property.id == 134 %}
+          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
+          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
+        {% endif %}
+        {% if property.property.id == 135 %}
+          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
+          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
+        {% endif %}
+        {% if property.property.id == 136 %}
+          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
+          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
+        {% endif %}
+        {% if property.property.id == 137 %}
+          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
+          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
+        {% endif %}
       {% endfor %}
     </div>
 </single-item>
