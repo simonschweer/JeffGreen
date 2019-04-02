@@ -33,32 +33,39 @@
     </div>
 
     <div slot="jg-properties">
+      <tbody>
       {% for property in item.documents[0].data.properties %}
-        {% if property.property.id == 133 %}
-          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
-          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
-          <br/>
-        {% endif %}
-        {% if property.property.id == 134 %}
-          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
-          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
-          <br/>
-        {% endif %}
-        {% if property.property.id == 135 %}
-          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
-          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
-          <br/>
-        {% endif %}
-        {% if property.property.id == 136 %}
-          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
-          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
-          <br/>
-        {% endif %}
-        {% if property.property.id == 137 %}
-          <div class="jg-property-check float-left"><i class="fa fa-check"></i></div>
-          <div class="jg-property-value float-left">{{ property.texts.value  }}</div>
-          <br/>
-        {% endif %}
+          {% if property.property.id == 133 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>{{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
+          {% if property.property.id == 134 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>{{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
+          {% if property.property.id == 135 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>{{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
+          {% if property.property.id == 136 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>{{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
+          {% if property.property.id == 137 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>{{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
       {% endfor %}
+      </tbody>
     </div>
 </single-item>
