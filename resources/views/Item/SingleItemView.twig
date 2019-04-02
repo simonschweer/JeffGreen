@@ -65,6 +65,12 @@
               <td>{{ property.texts.value  }}</td>
             </tr>
           {% endif %}
+          {% if property.property.id == 120 %}
+            <tr>
+              <td class="jg-property-check"><i class="fa fa-check"></i></td>
+              <td>Material: {{ property.texts.value  }}</td>
+            </tr>
+          {% endif %}
       {% endfor %}
       </tbody>
       </table>
