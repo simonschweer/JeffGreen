@@ -10,7 +10,7 @@
     "author"            :   "Simon Schweer",
     "type"              :   "theme",
     "require"           :   {
-                                "Ceres":"~3.0"
+                                "Ceres":"~4.0"
                             },
     "serviceProvider"   :   "JeffGreen\\Providers\\JeffGreenServiceProvider",
     "dataProviders"     :
