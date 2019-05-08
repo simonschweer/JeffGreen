@@ -5,12 +5,12 @@
     "authorIcon"        :   "",
     "email"             :   "simonschweer@me.com",
     "phone"             :   "+4901755207429",
-    "description"       :   "Jeff Green theme for Ceres 3.",
+    "description"       :   "Jeff Green theme for Ceres.",
     "namespace"         :   "JeffGreen",
     "author"            :   "Simon Schweer",
     "type"              :   "theme",
     "require"           :   {
-                                "Ceres":"Ceres 4.0.0"
+                                 "Ceres":">= 3.0.0"
                             },
     "serviceProvider"   :   "JeffGreen\\Providers\\JeffGreenServiceProvider",
     "dataProviders"     :
