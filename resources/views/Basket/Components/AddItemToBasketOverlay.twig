@@ -2,7 +2,7 @@
 
 {# {{ component( "Ceres::Item.Components.ItemBundle" ) }} #}
 
-<script type="x/template" id="vue-add-item-to-basket-overlay">
+<script type="x/template " id="vue-add-item-to-basket-overlay">
 
     <div id="add-item-to-basket-overlay">
         <div class="modal fade">
@@ -40,7 +40,7 @@
                                 {# <p>
                                     <item-bundle v-if="isLastBasketEntrySet" :bundle-type="latestBasketEntry.item.variation.bundleType" :bundle-components="latestBasketEntry.item.bundleComponents"></item-bundle>
                                 </p> #}
-                                
+
                                 <p class="small" v-for="attribute in latestBasketEntry.item.attributes">
                                     <strong>${ attribute.attribute.names.name }</strong>:
                                     <span>${ attribute.value.names.name }</span>
